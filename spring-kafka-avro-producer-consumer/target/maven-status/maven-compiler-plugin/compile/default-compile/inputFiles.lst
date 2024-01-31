@@ -1,0 +1,7 @@
+C:\Users\shar\Documents\Kafka_work\KafkaTutorials-master\KafkaTutorials-master\spring-kafka-avro-producer-consumer\src\main\java\com\vishaluplanch\avro\kafka\Application.java
+C:\Users\shar\Documents\Kafka_work\KafkaTutorials-master\KafkaTutorials-master\spring-kafka-avro-producer-consumer\src\main\java\com\vishaluplanch\avro\kafka\producer\SpringAvroProducer.java
+C:\Users\shar\Documents\Kafka_work\KafkaTutorials-master\KafkaTutorials-master\spring-kafka-avro-producer-consumer\src\main\java\com\vishaluplanch\avro\kafka\consumer\SpringBootAvroConsumer.java
+C:\Users\shar\Documents\Kafka_work\KafkaTutorials-master\KafkaTutorials-master\spring-kafka-avro-producer-consumer\src\main\java\com\vishaluplanch\avro\schema\StockHistory.java
+C:\Users\shar\Documents\Kafka_work\KafkaTutorials-master\KafkaTutorials-master\spring-kafka-avro-producer-consumer\src\main\java\com\vishaluplanch\avro\kafka\model\StockHistoryModel.java
+C:\Users\shar\Documents\Kafka_work\KafkaTutorials-master\KafkaTutorials-master\spring-kafka-avro-producer-consumer\src\main\java\com\vishaluplanch\avro\kafka\config\Config.java
+C:\Users\shar\Documents\Kafka_work\KafkaTutorials-master\KafkaTutorials-master\spring-kafka-avro-producer-consumer\src\main\java\com\vishaluplanch\avro\kafka\controller\SpringAvroRestController.java

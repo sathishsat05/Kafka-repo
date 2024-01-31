@@ -1,0 +1,47 @@
+avro:
+  topic:
+    name: confluent.spring.boot.sample.topic
+    
+server:
+  port: 9081
+
+spring:
+  kafka:
+    bootstrap-servers: pkc-921jm.us-east-2.aws.confluent.cloud:9092
+    properties:
+      schema:
+        registry:
+          url: https://psrc-gn6wr.us-east-2.aws.confluent.cloud
+      basic:
+        auth:
+          credentials:
+            source: USER_INFO
+          user:
+            info: KNBIYOVD74FT2G6I:Z5HwUHNWGdxX/OIpilNwq+8gkqNJLPT7pOnpTswREQQVJRDKr2NXeSGgjdxj56JA
+      sasl:
+        jaas:
+          config: org.apache.kafka.common.security.plain.PlainLoginModule
+            required username="TJJHFRMDXFQ4KTSW" password="GJ9VzzbvkYBX8wO6DFjIM2/7tp1ie8YF9qv0GX4G1OnEX1+lg1CNCrmGGxizkDqT";
+        mechanism: PLAIN
+      security:
+        protocol: SASL_SSL
+      ssl:
+        endpoint:
+          identification:
+            algorithm: https
+    consumer:
+      autoOffsetReset: earliest
+      group-id: spring-boot-avro-consumer-id
+      keyDeserializer: org.apache.kafka.common.serialization.StringDeserializer
+      properties:
+        specific:
+          avro:
+            reader: true
+      valueDeserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+    producer:
+      keySerializer: org.apache.kafka.common.serialization.StringSerializer
+      valueSerializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+
+
+
+
