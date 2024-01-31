@@ -7,7 +7,7 @@ server:
 
 spring:
   kafka:
-    bootstrap-servers: pkc-921jm.us-east-2.aws.confluent.cloud:9092
+    bootstrap-servers: pkc-p11xm.us-east-1.aws.confluent.cloud:9092
     properties:
       schema:
         registry:
@@ -21,7 +21,7 @@ spring:
       sasl:
         jaas:
           config: org.apache.kafka.common.security.plain.PlainLoginModule
-            required username="TJJHFRMDXFQ4KTSW" password="GJ9VzzbvkYBX8wO6DFjIM2/7tp1ie8YF9qv0GX4G1OnEX1+lg1CNCrmGGxizkDqT";
+            required username="COXKLGQORMXX2VRB" password="z3MHC5WMD3+aTSEC4sFIS1KreJwcm/JoyjBV1QW0BFOc3R1HUnYMEvMS9r0D8/fvtm";
         mechanism: PLAIN
       security:
         protocol: SASL_SSL
@@ -41,7 +41,3 @@ spring:
     producer:
       keySerializer: org.apache.kafka.common.serialization.StringSerializer
       valueSerializer: io.confluent.kafka.serializers.KafkaAvroSerializer
-
-
-
-
